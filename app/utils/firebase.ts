@@ -14,7 +14,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-let auth = getAuth()
+export let auth = getAuth()
 
 export let register = (email: string, password: string) =>
   createUserWithEmailAndPassword(auth, email, password)
@@ -22,6 +22,6 @@ export let register = (email: string, password: string) =>
 export let login = (email: string, password: string) =>
   signInWithEmailAndPassword(auth, email, password)
 
-export let logout = signOut(auth)
+export let logout = () => signOut(auth)
 
 export let db = getFirestore()
