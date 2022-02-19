@@ -25,7 +25,8 @@
     "react-native-screens": "~3.10.1",
     "react-native-stories-view": "^1.0.9",
     "react-native-web": "0.17.1",
-    "tailwindcss-classnames": "^3.0.2"
+    "tailwindcss-classnames": "^3.0.2",
+    "twrnc": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
