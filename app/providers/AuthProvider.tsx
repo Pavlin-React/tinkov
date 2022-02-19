@@ -5,9 +5,10 @@ import { Alert } from "react-native";
 import { db, login, register, logout, auth } from "../utils/firebase";
 
 interface IContext {
-  user: User | null
+  user: User | null 
   isLoading: boolean
   register: (email: string, password: string) => Promise<void>
+  login: (email: string, password: string) => Promise<void>
   logout: () => Promise<void>
 }
 
